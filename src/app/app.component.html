@@ -1,0 +1,44 @@
+<div>
+  <h1>Simple Calculator</h1>
+</div>
+
+<div>
+  <h3>Calculate two numbers using AngularJS</h3>
+</div>
+<div>
+<div>
+  <form action="">
+      <input 
+      type="number" 
+      name="n1" 
+      [(ngModel)]="a"
+      placeholder="Enter first operand"
+      >
+      <br><br>
+      <input 
+      type="number" 
+      name="n2" 
+      [(ngModel)]="b" 
+      id=""
+      placeholder="Enter second operand">
+      <br><br>
+      <tr>
+          <input type="radio" name="ch1" (click) = "add2()">
+          <label for="ch1">Add  </label>  
+          <input type="radio" name="ch1" (click) ="sub2()">
+          <label for="ch1">Subtract  </label>  
+          <input type="radio" name="ch1" (click) = mul2()>
+          <label for="ch1">Multiply  </label>  
+          <input type="radio" name="ch1"(click)= div2()>
+          <label for="ch1">Divide </label> 
+      </tr>
+
+      
+       
+
+  </form>
+  <p>1st-Operand = {{a}} <br> 2nd-Operand = {{b}}</p>
+  <h2 class="result"> <br> Result : {{st}} </h2>
+  
+</div>
+</div>
